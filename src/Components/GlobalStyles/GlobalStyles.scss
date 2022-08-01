@@ -1,10 +1,15 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap');
 
-:root {
-    --primary-color: #fe2c55;
-    --default-layout-header-height: 60px;
-    --default-layout-width: 1150px;
+$primary-color: #fe2c55;
+$black: #000;
+$text-color: #333;
+$default-layout-header-height: 60px;
+$default-layout-width: 1150px;
+
+%no-border-outline {
+    border: none;
+    outline: none;
 }
 
 * {
@@ -21,4 +26,9 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+a[href] {
+    color: $text-color;
+    text-decoration: none;
 }

@@ -1,3 +1,5 @@
+@import 'src/Components/GlobalStyles/GlobalStyles.scss';
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -5,7 +7,7 @@
 }
 
 .container {
-    width: var(--default-layout-width);
+    width: $default-layout-width;
     display: flex;
 }
 
