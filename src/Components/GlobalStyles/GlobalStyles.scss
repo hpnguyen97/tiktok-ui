@@ -3,11 +3,13 @@
 
 $primary-color: #fe2c55;
 $black: #000;
+$white: #fff;
 $text-color: #333;
 $default-layout-header-height: 60px;
 $default-layout-width: 1150px;
 
-%no-border-outline {
+%no-border-outline,
+button {
     border: none;
     outline: none;
 }
