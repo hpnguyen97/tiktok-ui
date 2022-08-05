@@ -16,6 +16,7 @@ $search-height: 46px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 24px 0;
 }
 
 .search,
@@ -94,4 +95,12 @@ $search-height: 46px;
     &:hover {
         background-color: #eaeaeb;
     }
+}
+
+.more-btn {
+    font-size: 2rem;
+    margin-left: 28px;
+    padding: 4px 8px;
+    background-color: transparent;
+    cursor: pointer;
 }
