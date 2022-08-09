@@ -64,6 +64,19 @@ $search-height: 46px;
     font-size: 16px;
 }
 
+.loading {
+    animation: Spinner 1s linear infinite;
+}
+
+@keyframes Spinner {
+    from {
+        transform: translateY(-50%) rotate(0);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
 .search-btn {
     @extend %no-border-outline;
     width: 52px;
