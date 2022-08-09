@@ -1,7 +1,5 @@
 @import 'src/Components/GlobalStyles/GlobalStyles.scss';
 
-$search-height: 46px;
-
 .wrapper {
     width: 100%;
     height: $default-layout-header-height;
@@ -19,84 +17,6 @@ $search-height: 46px;
     padding: 0 24px 0;
 }
 
-.search,
-.search-result {
-    width: 361px;
-}
-
-.search {
-    position: relative;
-    height: $search-height;
-    background-color: rgba(22, 24, 35, 0.06);
-    border-radius: 92px;
-    padding-left: 16px;
-    display: flex;
-    border: 1.5px solid transparent;
-
-    input {
-        height: 100%;
-        color: $black;
-        font-size: 1.6rem;
-        @extend %no-border-outline;
-        background-color: transparent;
-        flex: 1;
-        caret-color: $primary-color;
-    }
-
-    input:not(:placeholder-shown) ~ .search-btn {
-        color: rgba(22, 24, 35, 0.75);
-    }
-
-    &::after {
-        position: absolute;
-        content: '';
-        height: calc($search-height - 18px);
-        width: 1px;
-        right: 52px;
-        top: 9px;
-        background: rgba(22, 24, 35, 0.12);
-    }
-
-    &:focus-within {
-        border-color: #c5c6c9;
-    }
-}
-
-.search-title {
-    font-size: 1.4rem;
-    line-height: 2rem;
-    font-weight: 600;
-    padding: 5px 12px;
-    color: rgba(22, 24, 35, 0.5);
-}
-
-.clear,
-.loading {
-    @extend %no-border-outline;
-    position: absolute;
-    right: 64px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(22, 24, 35, 0.34);
-    font-size: 16px;
-}
-
-.search-btn {
-    @extend %no-border-outline;
-    width: 52px;
-    height: 100%;
-    border-top-right-radius: 92px;
-    border-bottom-right-radius: 92px;
-    cursor: pointer;
-    transition: 0.15s;
-    font-size: 1.9rem;
-    color: rgba(22, 24, 35, 0.34);
-
-    &:hover {
-        background-color: #eaeaeb;
-    }
-}
-
 // Actions
 .action {
     display: flex;
@@ -105,10 +25,13 @@ $search-height: 46px;
 
 .action-btn {
     color: #161823;
-    font-size: 2.2rem;
     background-color: transparent;
-    padding: 4px 12px;
+    padding: 4px 10px;
     cursor: pointer;
+}
+
+.action-btn:first-child {
+    margin-left: 8px;
 }
 
 .more-btn {
