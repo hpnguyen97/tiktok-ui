@@ -5,8 +5,8 @@ import 'tippy.js/dist/tippy.css';
 import * as searchServices from '~/services/searchService';
 import { faCircleXmark, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import PopperWrapper from 'src/Components/Popper/Wrapper';
-import AccountItem from '~/Components/AccountItem';
-import { SearchIcon } from '~/Components/Icons';
+import AccountItem from '~/Components/AccountItem/AccountItem';
+import { SearchIcon } from '~/Components/Icons/Icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDebounce } from '~/hooks';
 

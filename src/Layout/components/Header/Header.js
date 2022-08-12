@@ -19,11 +19,11 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import config from '~/config';
 import images from '~/assets/images';
 import styles from './Header.module.scss';
-import Button from '~/Components/Button';
-import Menu from '~/Components/Popper/menu';
-import { Message, Notification } from '~/Components/Icons';
-import Image from '~/Components/Image';
-import Search from '../Search';
+import Button from '~/Components/Button/Button';
+import Menu from '~/Components/Popper/menu/Menu';
+import { Message, Notification } from '~/Components/Icons/Icon';
+import Image from '~/Components/Image/Image';
+import Search from '../Search/Search';
 
 const cx = classNames.bind(styles);
 const MENU_ITEM = [
