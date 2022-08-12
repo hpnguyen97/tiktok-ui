@@ -1,11 +1,16 @@
 @import 'src/Components/GlobalStyles/GlobalStyles.scss';
 
 .wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: $default-layout-header-height;
     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
-    display: flex;
-    justify-content: center;
+    background-color: $white;
+    z-index: 20;
 }
 
 .inner {
@@ -15,6 +20,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 24px 0;
+}
+
+.logo-link {
+    display: flex;
 }
 
 // Actions

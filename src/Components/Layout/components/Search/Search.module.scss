@@ -20,6 +20,7 @@ $search-height: 46px;
         height: 100%;
         color: $black;
         font-size: 1.6rem;
+        font-family: $font-family;
         @extend %no-border-outline;
         background-color: transparent;
         flex: 1;
